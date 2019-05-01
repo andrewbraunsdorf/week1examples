@@ -33,6 +33,10 @@ int main(void)
         }
 }
 
+bool leapYear()
+{
+
+}
 
 // if mod == 4 return leap year
 // if mod !== 4 return NOT leap year
