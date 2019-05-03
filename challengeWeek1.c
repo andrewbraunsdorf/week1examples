@@ -22,9 +22,15 @@ int main(void)
     }
 }
 
+bool centuryCondition(year)
+{
+   return year % 100 !=0 || year % 400 ==0;
+
+}
+
 bool isLeapYear(year)
 {
-    return year % 4 == 0 && (year % 100 !=0 || year % 400 ==0)
+    return year % 4 == 0 && centuryCondition(year);
 }
     //// version 2
     // if(year % 4 != 0 || (year % 100 ==0 && year % 400 !=0))
@@ -57,7 +63,7 @@ bool isLeapYear(year)
     //     return true;
     // }
     // return false;
-}
+
 
 // int main(void)
 // {
