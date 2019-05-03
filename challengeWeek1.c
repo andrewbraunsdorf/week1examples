@@ -23,20 +23,30 @@ int main(void)
 
 bool isLeapYear(year)
 {
-    if(year % 4 == 0)
+
+    if(year % 400 == 0 && year % 4 == 0)
     {
-        if(year % 100 == 0)
+        if ( year % 100 == 0)
         {
-            if(year % 400 ==0)
-            {
-                return true;
-            }
-            return false;
+            return true;
         }
-        return true;
     }
     return false;
 }
+    // if(year % 4 == 0)
+    // {
+    //     if(year % 100 == 0)
+    //     {
+    //         if(year % 400 ==0)
+    //         {
+    //             return true;
+    //         }
+    //         return false;
+    //     }
+    //     return true;
+    // }
+    // return false;
+
 
 // int main(void)
 // {
