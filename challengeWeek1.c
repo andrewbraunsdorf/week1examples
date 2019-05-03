@@ -24,11 +24,7 @@ int main(void)
 
 bool isLeapYear(year)
 {
-    if(year % 4 == 0 && (year % 100 !=0 || year % 400 ==0))
-    {
-        return true;
-    }
-    return false;
+    return year % 4 == 0 && (year % 100 !=0 || year % 400 ==0)
 }
     //// version 2
     // if(year % 4 != 0 || (year % 100 ==0 && year % 400 !=0))
@@ -61,7 +57,7 @@ bool isLeapYear(year)
     //     return true;
     // }
     // return false;
-
+}
 
 // int main(void)
 // {
